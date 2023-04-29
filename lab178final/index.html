@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2D Array Line Plot</title>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <!-- Add the style tag with the CSS here -->
+</head>
+<body>
+  <div style="position: relative; width: 100%; height: 100%;">
+    <div id="line-plot"></div>
+    <div id="tooltip" style="position: absolute; pointer-events: none; display: none;"></div>
+    <div id="graph-container" style="position: absolute; bottom: 0; width: 100%; height: 1200px; background-color: black; display: none;"></div>
+  </div>
+  <script src="main.js"></script>
+  <script src="map.js"></script>
+  <script src="tooltip.js"></script>
+  <script src="graph.js"></script>
+</body>
+</html>
