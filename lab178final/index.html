@@ -11,8 +11,16 @@
 <body>
   <div style="position: relative; width: 100%; height: 100%;">
     <div id="line-plot"></div>
-    <div id="tooltip" style="position: absolute; pointer-events: none; display: none;"></div>
-    <div id="graph-container" style="position: absolute; bottom: 0; width: 100%; height: 1200px; background-color: black; display: none;"></div>
+    <div id="tooltip" style="position: absolute; pointer-events: none; display: none; z-index: 2"></div>
+    <div id="graph-container" style="position: absolute; bottom: 10px; width: 100%; height: 300px; background-color: black; display: none;"></div>
+    <div id="json-container" style="position: absolute; bottom: 10px; width: 100%; height: 300px; background-color: black; display: none; overflow: auto;">
+      <pre class="json-content"></pre>
+    </div>
+    <div id="bottom-space" style="position: absolute; bottom: 0; width: 100%; height: 10px; background-color: black; display: none;"></div>
+    <div id="graph-name" style="position: absolute; top: 10px; right: 10px; font-size: 24px; color: white; display: none;"></div>
+    <button id="sketchy-people-btn" class="top-left-button">Pattern People</button>
+    <button id="squatters" class="top-left-button-below">Squatters</button>
+    
   </div>
   <script src="main.js"></script>
   <script src="map.js"></script>

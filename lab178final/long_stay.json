@@ -1,0 +1,129 @@
+[
+  {
+    "car_id": "20154604064624-746",
+    "location": "camping3",
+    "hours_spent": 29,
+    "start_time": "2015-08-04 07:46:42"
+  },
+  {
+    "car_id": "20152515012543-659",
+    "camping_id": "camping2",
+    "hours_spent": 21,
+    "start_time": "2015-09-15 14:00:31"
+  },
+    {
+      "car_id": "20153906013912-384",
+      "location": "camping8",
+      "hours_spent": 21,
+      "start_time": "2015-05-06 13:46:00"
+    },
+    {
+      "car_id": "20155909085910-596",
+      "location": "camping4",
+      "hours_spent": 25,
+      "start_time": "2015-05-09 09:21:19"
+    },
+    {
+      "car_id": "20150507060531-534",
+      "location": "camping0",
+      "hours_spent": 21,
+      "start_time": "2015-06-07 06:46:00"
+    },
+    {
+      "car_id": "20152809032822-774",
+      "location": "camping5",
+      "hours_spent": 22,
+      "start_time": "2015-06-09 15:53:14"
+    },
+    {
+      "car_id": "20150916030932-958",
+      "location": "camping5",
+      "hours_spent": 21,
+      "start_time": "2015-07-16 16:02:39"
+    },
+    {
+      "car_id": "20155517055510-758",
+      "location": "camping2",
+      "hours_spent": 32,
+      "start_time": "2015-07-17 22:51:40"
+    },
+    {
+      "car_id": "20154430034428-915",
+      "location": "camping2",
+      "hours_spent": 23,
+      "start_time": "2015-07-30 16:45:24"
+    },
+    {
+      "car_id": "20154625114655-96",
+      "location": "camping8",
+      "hours_spent": 30,
+      "start_time": "2015-07-25 12:48:55"
+    },
+    {
+      "car_id": "20155705025759-63",
+      "location": "camping6",
+      "hours_spent": 28,
+      "start_time": "2015-06-05 15:29:43"
+    },
+    {
+      "car_id": "20155705025759-63",
+      "location": "camping2",
+      "hours_spent": 28,
+      "start_time": "2015-07-03 16:01:36"
+    },
+    {
+      "car_id": "20155705025759-63",
+      "location": "camping3",
+      "hours_spent": 24,
+      "start_time": "2015-07-31 13:55:01"
+    },
+    {
+        "car_id": "20155705025759-63",
+        "camping_id": "camping5",
+        "hours_spent": 23,
+        "start_time": "2015-08-24 19:00:05"
+    },
+    {
+        "car_id": "20155705025759-63",
+        "camping_id": "camping0",
+        "hours_spent": 32,
+        "start_time": "2015-09-17 11:39:27"
+    },
+    {
+        "car_id": "20155705025759-63",
+        "camping_id": "camping2",
+        "hours_spent": 34,
+        "start_time": "2015-10-19 18:58:52"
+    },
+    {
+        "car_id": "20155705025759-63",
+        "camping_id": "camping6",
+        "hours_spent": 30,
+        "start_time": "2015-11-22 14:00:56"
+    },
+    {
+        "car_id": "20155705025759-63",
+        "camping_id": "camping3",
+        "hours_spent": 35,
+        "start_time": "2015-12-22 18:44:38"
+    },
+    {
+        "car_id": "20155705025759-63",
+        "camping_id": "camping4",
+        "hours_spent": 35,
+        "start_time": "2016-01-26 15:22:40"
+    },
+    {
+        "car_id": "20155705025759-63",
+        "camping_id": "camping0",
+        "hours_spent": 30,
+        "start_time": "2016-03-01 18:20:10"
+      },
+      {
+          "car_id": "20155705025759-63",
+          "camping_id": "camping4",
+          "hours_spent": 33,
+          "start_time": "2016-03-31 13:45:56"
+      }
+    ]
+      

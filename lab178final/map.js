@@ -1,3 +1,5 @@
+
+
 function findNeighboringRoadCells(data, sensorRow, sensorCol) {
     const neighbors = [];
   
@@ -26,7 +28,7 @@ function findNeighboringRoadCells(data, sensorRow, sensorCol) {
 
 
 // Function to draw lines
-function drawLine(g, x1, y1, x2, y2, id, color = "white") {
+function drawLine(g, x1, y1, x2, y2,id, color = "white") {
     const cellSize = 30;
     g
         .append("line")
@@ -35,23 +37,13 @@ function drawLine(g, x1, y1, x2, y2, id, color = "white") {
         .attr("x2", x2 * cellSize + cellSize / 2)
         .attr("y2", y2 * cellSize + cellSize / 2)
         .attr("stroke", color)
-        .attr("stroke-width", 15)
-        .attr("stroke-linecap", "round") // Add this attribute to make line corners rounded
+        .attr("stroke-width", 20)
+        .attr("stroke-linecap", "round")
         .attr("class", `road-group-${id}`)
-        .on("mouseover", function (event) {
-        g.selectAll(`.road-group-${id}`).attr("stroke", "blue");
-        updateTooltip(`Road ID: ${id}`, event.pageX, event.pageY);
-        })
-        .on("mouseout", function () {
-        g.selectAll(`.road-group-${id}`).attr("stroke", color);
-        d3.select("#tooltip").style("display", "none");
-        })
-        .on("click", () => showGraph({ type: "road", id: id }, x1, y1));
-
     }
 
 
-function drawSensor(g, x, y, color, cell) {
+function drawSensor(g, x, y, color, sensor, data, paths) {
     const cellSize = 30;
     g
     .append("circle")
@@ -60,16 +52,53 @@ function drawSensor(g, x, y, color, cell) {
     .attr("r", cellSize-6)
     .attr("fill", color)
     .on("mouseover", function (event) {
+        for (const key in paths[sensor]){
+          var arr = []
+          paths[sensor][key].forEach(coord => {
+            arr.push(data.find(item => item.x === coord[0] && item.y === coord[1]))
+          });
+          for (let i = 0; i < arr.length -1; i++){
+            drawLine(g, arr[i].y, arr[i].x, arr[i+1].y, arr[i+1].x, 0, "blue");
+          }
+        }
         d3.select(this).attr("fill", d3.rgb(color).darker());
-        updateTooltip(`Sensor Color: ${color}`, event.pageX, event.pageY);
     })
     .on("mouseout", function () {
+        g.selectAll(`.road-group-${0}`).remove();
         d3.select(this).attr("fill", color);
-        d3.select("#tooltip").style("display", "none");
     })
-    .on("click", () => showGraph({ type: "sensor", color: color }, x, y));
+    .on("click", () => showSensorGraph(sensor));
+}
 
-
+function nameSensor(g,x,y,color,sensor,data,paths)
+{
+  const cellSize = 30;
+  g
+    .append("text")
+    .attr("x", x * cellSize + cellSize * 2)
+    .attr("y", y * cellSize + cellSize* -0.5)
+    .attr("text-anchor", "middle")
+    .attr("dominant-baseline", "central")
+    .style("fill", color)
+    .attr("font-size", "92px")
+    .text(sensor)
+    .on("mouseover", function (event) {
+      for (const key in paths[sensor]){
+        var arr = []
+        paths[sensor][key].forEach(coord => {
+          arr.push(data.find(item => item.x === coord[0] && item.y === coord[1]))
+        });
+        for (let i = 0; i < arr.length -1; i++){
+          drawLine(g, arr[i].y, arr[i].x, arr[i+1].y, arr[i+1].x, 0, "blue");
+        }
+      }
+      d3.select(this).attr("fill", d3.rgb(color).darker());
+    })
+    .on("mouseout", function () {
+        g.selectAll(`.road-group-${0}`).remove();
+        d3.select(this).attr("fill", color);
+    })
+    .on("click", () => showSensorGraph(sensor));
 }
 
 function zoomed(g, event) {

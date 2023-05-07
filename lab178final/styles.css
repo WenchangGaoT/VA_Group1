@@ -15,10 +15,10 @@ body {
 #tooltip {
     background-color: rgb(250, 241, 241);
     color: rgb(0, 0, 0);
-    padding: 80px;
-    border-radius: 80px;
+    padding: 8px;
+    border-radius: 8px;
     pointer-events: none;
-    font-size: 72px;
+    font-size: 18px;
     white-space: nowrap;
 }
 #bar {
@@ -42,3 +42,39 @@ body {
 text {
   fill: white;
 }
+.top-left-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    padding: 10px 8px;
+    border: none;
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+.top-left-button:hover {
+    background-color: #d32f2f;
+  }
+.json-content {
+    color: yellow;
+  }
+
+  .top-left-button-below {
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    font-size: 24px;
+    padding: 10px 8px;
+    border: none;
+    background-color: #260fd4;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+.top-left-button-below:hover {
+    background-color: #3f66f3;
+  }

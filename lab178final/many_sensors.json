@@ -1,0 +1,5 @@
+{
+    "20154519024544-322": {"car_type": "2", "car_id": "20154519024544-322", "route": ["camping4", "camping4", "general-gate7", "general-gate4", "general-gate1", "ranger-stop2", "ranger-stop0", "general-gate2", "general-gate5", "entrance4", "entrance4", "general-gate5", "general-gate2", "ranger-stop0", "ranger-stop2", "general-gate1", "general-gate4", "general-gate7"], "frequency": 15},
+    "20154112014114-381": {"car_type": "1", "car_id": "20154112014114-381", "route": ["entrance0", "general-gate1", "ranger-stop2", "ranger-stop0", "general-gate2", "general-gate5", "camping6", "camping6", "general-gate5", "general-gate2", "ranger-stop0", "ranger-stop2", "general-gate1", "entrance0"], "frequency": 7},
+    "20162904122951-717": {"car_type": "1", "car_id": "20162904122951-717", "route": ["entrance3", "general-gate7", "camping0", "camping0", "general-gate7", "entrance3"], "frequency": 6}
+}
